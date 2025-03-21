@@ -34,13 +34,14 @@ public class LogAnalyzer
     /**
      * Create an object to analyze hourly web accesses.
      */
-    public LogAnalyzer()
+    public LogAnalyzer(String filename)
     { 
         // Create the array object to hold the hourly
         // access counts.
         hourCounts = new int[24];
         // Create the reader to obtain the data.
-        reader = new LogfileReader();
+        //reader = new LogfileReader();
+        reader = new LogfileReader(filename);
     }
 
     /**
@@ -104,5 +105,5 @@ public class LogAnalyzer
         int total = 0;
         // Add the value in each element of hourCounts to // total. ...
         return total;
-}
+    }
 }
