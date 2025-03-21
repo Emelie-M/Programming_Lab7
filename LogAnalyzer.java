@@ -3,6 +3,38 @@
  * 
  * @author David J. Barnes and Michael Kölling.
  * @version    2016.02.29
+ * 
+ * 1. day 18 is the busiest by 237
+ * 2. private String[] people;
+ *      people = new Person[];
+ * 3. private int[] variant;
+ *      variant = new boolean[];
+ * 4. theres hourCounts in ever method except the printData at the end
+ * 5. int[] counts; 
+ *    boolean[] occupied;
+ * 6. double[] readings;
+ *      readings = new double[60];
+ *    Sring[] urls;
+ *      urls = new string[90];
+ *    TicketMachine[] machines;
+ *      machines = new TicketMachine[5];
+ * 7. 20
+ * 8. double[] prices = new double[50]; its [] not ()
+ * 9.
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
  */
 public class LogAnalyzer
 {
