@@ -103,6 +103,9 @@ public class LogAnalyzer
      * Return the number of accesses recorded in the log file. */
     public int numberOfAccesses() {
         int total = 0;
+        for(int counts : hourCounts){
+            total +=counts;
+        }
         // Add the value in each element of hourCounts to // total. ...
         return total;
     }
