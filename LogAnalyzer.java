@@ -20,29 +20,17 @@
  *      machines = new TicketMachine[5];
  * 7. 20
  * 8. double[] prices = new double[50]; its [] not ()
- * 9.
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
+ * 9. it opens the editior but it still prints with the correct information
  * 
  */
 public class LogAnalyzer
 {
     // Where to calculate the hourly access counts.
     private int[] hourCounts;
+    private String[] logFile;
     // Use a LogfileReader to access the data.
     private LogfileReader reader;
-
+    
     /**
      * Create an object to analyze hourly web accesses.
      */
@@ -75,8 +63,15 @@ public class LogAnalyzer
     public void printHourlyCounts()
     {
         System.out.println("Hr: Count");
-        for(int hour = 0; hour < hourCounts.length; hour++) {
+        /**for(int hour = 0; hour < hourCounts.length; hour++) {
+        *    System.out.println(hour + ": " + hourCounts[hour]);
+        }*/
+        
+        int hour = 0;
+        while(hour < hourCounts.length)
+        {
             System.out.println(hour + ": " + hourCounts[hour]);
+            hour++;
         }
     }
     
@@ -87,4 +82,27 @@ public class LogAnalyzer
     {
         reader.printData();
     }
+    
+    /**
+     * Question 11
+     * Print all the values in the marks array that are greater than mean.
+     * @param marks An array of mark values.
+     * @param mean The mean (average) mark. */ 
+    public void printGreater(double mean) {
+        double[] marks = {1.1, 5.7, 6.6, 9.2, 10.4};
+        for(int index = 0; index < marks.length; index++) {
+           if(marks[index] > mean){ 
+               System.out.println(marks[index]);
+          }
+       }    
+     }
+     
+    /** 
+     * Question 13
+     * Return the number of accesses recorded in the log file. */
+    public int numberOfAccesses() {
+        int total = 0;
+        // Add the value in each element of hourCounts to // total. ...
+        return total;
+}
 }
