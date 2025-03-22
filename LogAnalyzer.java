@@ -21,7 +21,8 @@
  * 7. 20
  * 8. double[] prices = new double[50]; its [] not ()
  * 9. it opens the editior but it still prints with the correct information
- * 
+ * 12. myLog.txt file created
+ * 17. the first one on the list
  */
 public class LogAnalyzer
 {
@@ -66,7 +67,8 @@ public class LogAnalyzer
         System.out.println("Hr: Count");
         /**for(int hour = 0; hour < hourCounts.length; hour++) {
         *    System.out.println(hour + ": " + hourCounts[hour]);
-        }*/
+        *   }
+        */
         
         int hour = 0;
         while(hour < hourCounts.length)
@@ -108,5 +110,29 @@ public class LogAnalyzer
         }
         // Add the value in each element of hourCounts to // total. ...
         return total;
+    }
+    
+    public int busiestHour()
+    {
+        int max = hourCounts[0];
+        for(int hour = 0; hour < hourCounts.length; hour++)
+        {
+            if(hourCounts[hour] > max){
+                max = hourCounts[hour];
+            }
+        }
+        return max;
+    }
+    
+    public int quietestHour()
+    {
+        int min = hourCounts[0];
+        for(int hour = 0; hour < hourCounts.length; hour++)
+        {
+            if(hourCounts[hour] < min){
+                min = hourCounts[hour];
+            }
+        }
+        return min;
     }
 }
